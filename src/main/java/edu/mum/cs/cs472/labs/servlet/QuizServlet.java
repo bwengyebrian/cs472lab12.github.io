@@ -45,7 +45,7 @@ public class QuizServlet extends HttpServlet {
                     "    <p>" + quiz.getQuestion(quiz.currentQuestion()) + "</p>\n" +
                     "\n" +
                     "    <form action=\"quiz\" method=\"post\">\n" +
-                    "        <label for=\"ans\">Your Answer </label><input type=\"number\" name=\"ans\" id=\"ans\">\n" +
+                    "        <label for=\"ans\">Your Answer </label><input type=\"number\" name=\"ans\" id=\"ans\" required>\n" +
                     "        <br><input type=\"hidden\" value=\"" + quiz.currentQuestion() + "\" name=\"questionNo\"></br>\n" +
                     "        <input type=\"submit\" value=\"Submit\">\n" +
                     "    </form>\n" +
